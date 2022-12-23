@@ -55,9 +55,10 @@ def demandeP():
     tk.Label(prob, text="Py", bg="#444", fg="#fff",font=("Arial", 13), padx=15, pady=10).grid(row=0, column=1)
     p1.grid(row=1, column=0)
     p2.grid(row=1, column=1)
-    prob.grid(row=0, column=1)
-    tk.Button(window, text="Valider", bg="#444", fg="#fff",font=("Arial", 11), padx=10, pady=3, command=validP).grid(row=1, column=1)
-    error2 = tk.Label(window, text="Les valeurs donnée sont erroné (ORTHOGRAPHEUH)", bg="#444", fg="#f00",font=("Arial", 12), padx=20, pady=10)
+    prob.grid(row=0, column=1)                                                               #command=validP
+    tk.Button(window, text="Valider", bg="#444", fg="#fff",font=("Arial", 11), padx=10, pady=3).grid(row=1, column=1)
+    print("y")  
+    #error2 = tk.Label(window, text="Les valeurs donnée sont erroné (ORTHOGRAPHEUH)", bg="#444", fg="#f00",font=("Arial", 12), padx=20, pady=10)
     # suppression de l'erreur
     error.pack_forget()
     
